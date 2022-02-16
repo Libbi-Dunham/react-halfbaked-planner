@@ -3,6 +3,9 @@ import { parseDate } from '../utils/parseDate';
 
 // payload is an entry object:
 // { title: String, content: String, date: Date }
+// const initialItems = [
+//   { title: 'walk', content: 'outside', date: 09 / 09 / 2002 },
+// ];
 function entriesReducer(entries, { type, payload }) {
   switch (type) {
     case 'create':
